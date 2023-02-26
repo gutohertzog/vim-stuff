@@ -45,14 +45,33 @@ set history=1000
 set wildmenu
 set wildmode=list:longest
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
+
+" set a limit column
+set colorcolumn=80 
+
+" others
+set encoding=utf-8
 " }}}
 
 " PLUGINS ----------- {{{
-"
+call plug#begin('~/.vim/plugged')
+
+    Plug 'preservim/nerdtree'
+    Plug 'vim-airline/vim-airline'
+    Plug 'vim-airline/vim-airline-themes'
+    Plug 'dense-analysis/ale'
+    " Plug 'neoclide/coc.nvim'
+
+call plug#end()
 " }}}
 
 " MAPPINGS ---------- {{{
-"
+
+noremap <Up> <NoP>
+noremap <Down> <NoP>
+noremap <Left> <NoP>
+noremap <Right> <NoP>
+
 " }}}
 
 "VIMSCRIPTS --------- {{{
