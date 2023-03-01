@@ -7,6 +7,13 @@ filetype indent on
 
 " turn syntax highlighting on
 syntax on
+set t_Co=256
+set t_ut=
+set background=dark
+let g:codedark_italics=1
+let g:codedark_transparent=1
+let g:airline_theme = 'codedark'
+
 
 " add numbers and relative numbers to each line on left-hand side
 set number
@@ -56,13 +63,18 @@ set encoding=utf-8
 " PLUGINS ----------- {{{
 call plug#begin('~/.vim/plugged')
 
+    Plug 'tomasiser/vim-code-dark'
     Plug 'preservim/nerdtree'
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
+    Plug 'tpope/vim-fugitive'
     Plug 'dense-analysis/ale'
     " Plug 'neoclide/coc.nvim'
 
 call plug#end()
+
+" for some reason, colorscheme must come after close the plug to work
+colorscheme codedark
 " }}}
 
 " MAPPINGS ---------- {{{
