@@ -1,0 +1,5 @@
+here are some links that may or may not be usefull
+
+- https://learnvimscriptthehardway.stevelosh.com
+- https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor
+
