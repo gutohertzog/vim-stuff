@@ -79,11 +79,20 @@ colorscheme codedark
 
 " MAPPINGS ---------- {{{
 
-noremap <Up> <NoP>
-noremap <Down> <NoP>
-noremap <Left> <NoP>
-noremap <Right> <NoP>
+nnoremap <Up> <NoP>
+nnoremap <Down> <NoP>
+nnoremap <Left> <NoP>
+nnoremap <Right> <NoP>
 
+inoremap <Up> <NoP>
+inoremap <Down> <NoP>
+inoremap <Left> <NoP>
+inoremap <Right> <NoP>
+
+vnoremap <Up> <NoP>
+vnoremap <Down> <NoP>
+vnoremap <Left> <NoP>
+vnoremap <Right> <NoP>
 " }}}
 
 "VIMSCRIPTS --------- {{{
